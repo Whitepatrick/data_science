@@ -1,12 +1,15 @@
-FROM ipython/ipython:3.x
+FROM ipython/ipython:latest
 
-MAINTAINER IPython Project <ipython-dev@scipy.org>
+MAINTAINER Patrick White <whitep@vcu.edu>
 
 VOLUME /notebooks
 WORKDIR /notebooks
 
 EXPOSE 8888
 
-ADD notebook.sh /
+ENV LANG C.UTF-8
 
+#ENTRYPOINT [ "/usr/bin/tini", "--" ]
+
+ADD notebook.sh /
 CMD ["/notebook.sh"]
