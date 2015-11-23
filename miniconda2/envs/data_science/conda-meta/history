@@ -1,0 +1,83 @@
+==> 2015-11-23 17:04:42 <==
+# cmd: miniconda2/bin/conda create -n data_science python
+openssl-1.0.2d-0
+pip-7.1.2-py27_0
+python-2.7.10-2
+readline-6.2-2
+setuptools-18.4-py27_0
+sqlite-3.8.4.1-1
+tk-8.5.18-0
+wheel-0.26.0-py27_1
+zlib-1.2.8-0
+# create specs: ['python', 'python 2.7*']
+==> 2015-11-23 17:05:28 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install pandas
++libgfortran-1.0-0
++numpy-1.10.1-py27_0
++openblas-0.2.14-3
++pandas-0.17.1-np110py27_0
++python-dateutil-2.4.2-py27_0
++pytz-2015.7-py27_0
++six-1.10.0-py27_0
+# install specs: ['pandas', 'python 2.7*']
+==> 2015-11-23 17:06:00 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install matplotlib
++cairo-1.12.18-5
++cycler-0.9.0-py27_0
++fontconfig-2.11.1-5
++freetype-2.5.5-0
++libpng-1.6.17-0
++libxml2-2.9.2-0
++matplotlib-1.5.0-np110py27_0
++pixman-0.26.2-0
++py2cairo-1.10.0-py27_2
++pyparsing-2.0.3-py27_0
++pyqt-4.11.4-py27_0
++qt-4.8.7-1
++sip-4.16.9-py27_0
+# install specs: ['matplotlib', 'python 2.7*']
+==> 2015-11-23 17:06:11 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install scipy
++scipy-0.16.0-np110py27_1
+# install specs: ['scipy', 'python 2.7*']
+==> 2015-11-23 17:06:16 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install scikit-learn
++scikit-learn-0.17-np110py27_1
+# install specs: ['scikit-learn', 'python 2.7*']
+==> 2015-11-23 17:06:20 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install ipython
++decorator-4.0.4-py27_0
++ipython-4.0.0-py27_0
++ipython_genutils-0.1.0-py27_0
++path.py-8.1.2-py27_0
++pexpect-3.3-py27_0
++pickleshare-0.5-py27_0
++simplegeneric-0.8.1-py27_0
++traitlets-4.0.0-py27_0
+# install specs: ['ipython', 'python 2.7*']
+==> 2015-11-23 17:06:33 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install ipython-notebook
++ipykernel-4.1.1-py27_0
++ipython-notebook-4.0.4-py27_0
++jinja2-2.8-py27_0
++jsonschema-2.4.0-py27_0
++jupyter_client-4.1.1-py27_0
++jupyter_core-4.0.6-py27_0
++libsodium-1.0.3-0
++markupsafe-0.23-py27_0
++mistune-0.7.1-py27_0
++nbconvert-4.0.0-py27_0
++nbformat-4.0.1-py27_0
++notebook-4.0.6-py27_0
++ptyprocess-0.5-py27_0
++pygments-2.0.2-py27_0
++pyzmq-14.7.0-py27_1
++ssl_match_hostname-3.4.0.2-py27_0
++terminado-0.5-py27_1
++tornado-4.2.1-py27_1
++zeromq-4.1.3-0
+# install specs: ['ipython-notebook', 'python 2.7*']
+==> 2015-11-23 17:06:35 <==
+# cmd: /notebooks/miniconda2/envs/data_science/bin/conda install nose
++nose-1.3.7-py27_0
+# install specs: ['nose', 'python 2.7*']

@@ -1,0 +1,6 @@
+#!/notebooks/miniconda2/envs/data_science/bin/python
+
+from nbconvert.nbconvertapp import main
+
+if __name__ == '__main__':
+    main()
