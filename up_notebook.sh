@@ -6,6 +6,7 @@ sudo docker run -d \
   -v $HOME/workspace/data_science:/notebooks \
   -e "PASSWORD=data_science" \
   --name scipyserver \
+  --hostname scipyserver \
   ipython/scipyserver
 
 sudo docker exec -t -i scipyserver /bin/bash
