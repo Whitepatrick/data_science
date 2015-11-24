@@ -1,8 +1,0 @@
-#!/notebooks/miniconda2/envs/data_science/bin/python
-from jupyter_client.kernelspecapp import KernelSpecApp
-
-def main():
-    KernelSpecApp.launch_instance()
-
-if __name__ == '__main__':
-    main()

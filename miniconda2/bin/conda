@@ -1,5 +1,0 @@
-#!/notebooks/miniconda2/bin/python
-import sys
-from conda.cli import main
-
-sys.exit(main())

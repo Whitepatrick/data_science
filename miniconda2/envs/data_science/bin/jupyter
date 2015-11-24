@@ -1,7 +1,0 @@
-#!/notebooks/miniconda2/envs/data_science/bin/python
-"""Launch the root jupyter command"""
-
-from jupyter_core.command import main
-
-if __name__ == '__main__':
-    main()

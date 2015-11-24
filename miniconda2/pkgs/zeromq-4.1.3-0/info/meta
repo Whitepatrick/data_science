@@ -1,7 +1,0 @@
-pkg: zeromq-4.1.3
-dist: zeromq-4.1.3-0
-home: http://zeromq.org
-license: LGPL
-has_bin: True
-has_lib: True
-has_py: False
