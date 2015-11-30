@@ -3,8 +3,9 @@ MAINTAINER Patrick White <whitep@vcu.edu>
 
 RUN printf "deb http://ftp.us.debian.org/debian/ jessie main contrib non-free\ndeb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free" > /etc/apt/sources.list
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -yq build-essential \
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update
+RUN apt-get install --no-install-recommends -yq build-essential \
 curl \
 python \
 python-dev \
