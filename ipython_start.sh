@@ -14,4 +14,4 @@ sudo docker run -d \
   --hostname data-notebook \
   data-notebook
 
-sudo docker exec -t -i data-notebook /bin/bash
+#sudo docker exec -t -i data-notebook /bin/bash
