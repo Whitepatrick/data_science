@@ -5,3 +5,7 @@
 1.14
 
 2 six sided die distribution b= 36
+
+sum of squared residuals =  sum of squared errors
+
+random seeds
