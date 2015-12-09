@@ -12,7 +12,7 @@ sudo docker run -d \
   -v $HOME/workspace/DAT-NYC-29:/notebooks/notebooks/DAT-NYC-29 \
   -e "PASSWORD=data_science" \
   --name data-notebook \
-  --hostnae data-notebook \
+  --hostname data-notebook \
   data-notebook
 
 #sudo docker exec -t -i data-notebook /bin/bash
