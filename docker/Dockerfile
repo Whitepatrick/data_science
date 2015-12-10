@@ -29,6 +29,8 @@ RUN pip install --upgrade matplotlib
 RUN pip install --upgrade seaborn
 RUN pip install --upgrade ipython[notebook]
 RUN pip install --upgrade nose
+RUN pip install --upgrade patsy
+RUN pip install --upgrade statsmodels
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 ADD reqs.txt /tmp
@@ -37,17 +39,10 @@ RUN pip install -r /tmp/reqs.txt
 RUN source /root/.bashrc
 RUN rm /tmp/reqs.txt
 
-RUN apt-get install -y unzip
-COPY patsy*.zip /opt
-COPY statsmodels-0.6.1.tar.gz /opt
-RUN cd /opt && unzip patsy*.zip && cd patsy* && python setup.py install
-RUN cd /opt && tar zxfv statsmodels*.tar.gz && cd statsmodels* && python setup.py install
-
 VOLUME /notebooks
 WORKDIR /notebooks
 
 EXPOSE 8888
-EXPOSE 80
 
 ADD notebook.sh /
 

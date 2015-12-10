@@ -6,3 +6,5 @@ matplotlib
 seaborn
 ipython[notebook]
 nose
+patsy
+statsmodels
