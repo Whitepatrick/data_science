@@ -31,10 +31,18 @@ RUN pip install --upgrade ipython[notebook]
 RUN pip install --upgrade nose
 RUN pip install --upgrade patsy
 RUN pip install --upgrade statsmodels
+RUN pip install --upgrade IMDbPY
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 ADD reqs.txt /tmp
 COPY .customrc /root/.bashrc
+
+#imdbpy lib install
+#RUN mkdir /opt/imdbpy
+#COPY alberanid-imdbpy-*.tar.gz /opt/imdbpy.tar.gz
+#RUN tar xf /opt/imdbpy.tar.gz -C /opt/imdbpy && rm /opt/imdbpy.tar.gz
+#RUN python /opt/imdbpy/setup.py install
+
 RUN pip install -r /tmp/reqs.txt
 RUN source /root/.bashrc
 RUN rm /tmp/reqs.txt

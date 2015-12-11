@@ -7,7 +7,6 @@ docker build -t data-notebook docker/.
 
 docker run -d \
   -p 443:8888 \
-  -p 80:80 \
   -v $HOME/workspace/data_science:/notebooks \
   -v $HOME/workspace/DAT-NYC-29:/notebooks/notebooks/DAT-NYC-29 \
   -e "PASSWORD=data_science" \
