@@ -8,4 +8,4 @@ ipython[notebook]
 nose
 patsy
 statsmodels
-IMDbPY
+omdb

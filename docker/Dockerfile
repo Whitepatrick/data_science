@@ -31,7 +31,7 @@ RUN pip install --upgrade ipython[notebook]
 RUN pip install --upgrade nose
 RUN pip install --upgrade patsy
 RUN pip install --upgrade statsmodels
-RUN pip install --upgrade IMDbPY
+RUN pip install --upgrade omdb
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 ADD reqs.txt /tmp
