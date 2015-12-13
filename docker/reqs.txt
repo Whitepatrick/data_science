@@ -8,4 +8,7 @@ ipython[notebook]
 nose
 patsy
 statsmodels
-omdb
+imdbpy
+wget
+mysqldbda
+Flask-MySQLdb
