@@ -57,3 +57,4 @@ docs/_build/
 target/
 secrets/
 notebooks/DAT-NYC-29
+notebooks/DAT-NYC-29/*
