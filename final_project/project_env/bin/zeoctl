@@ -1,0 +1,10 @@
+#!/home/zaphod/workspace/data_science/final_project/project_env/bin/python2
+# EASY-INSTALL-ENTRY-SCRIPT: 'ZEO==4.2.0b1','console_scripts','zeoctl'
+__requires__ = 'ZEO==4.2.0b1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('ZEO==4.2.0b1', 'console_scripts', 'zeoctl')()
+    )
