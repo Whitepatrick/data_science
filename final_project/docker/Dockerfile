@@ -1,39 +1,24 @@
-############################################################
-# Dockerfile to build Python WSGI Application Containers
-# Based on Ubuntu
-############################################################
+FROM python:2.7-slim
 
-# Set the base image to Ubuntu
-FROM ubuntu
+RUN apt-get update && apt-get install -y \
+		gcc \
+		gettext \
+		mysql-client libmysqlclient-dev \
+		postgresql-client libpq-dev \
+		sqlite3 \
+		python-dev \
+		wget \
+		curl \
+		git \
+		vim \
+		libfreetype6 \
+	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 
-# File Author / Maintainer
-MAINTAINER Maintaner Name
+ENV DJANGO_VERSION 1.9
 
-# Add the application resources URL
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" >> /etc/apt/sources.list
+RUN pip install --upgrade pip
+RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
-# Update the sources list
-RUN apt-get update
-
-# Install basic applications
-RUN apt-get install -y tar git curl lnav strace vim nmap wget dialog net-tools build-essential
-
-# Install Python and Basic Python Tools
-RUN apt-get install -y python python-dev python-distribute python-pip
-
-# Copy the application folder inside the container
-ADD $HOME/worspace/data_science/final_project/data_db /data_db
-
-# Get pip to download and install requirements:
-RUN pip install -r /data_db/requirements.txt
-
-# Expose ports
-EXPOSE 80
-
-# Set the default directory where CMD will execute
-WORKDIR /data_db
-
-# Set the default command to execute
-# when creating a new container
-# i.e. using CherryPy to serve the application
-#CMD python server.py
+RUN pip install --upgrade numpy scipy pandas scikit-learn matplotlib
+RUN pip install --upgrade patsy seaborn ipython[notebook] statsmodels
+RUN pip install --upgrade nose imdbpy wget mysqldbda ipywidgets
